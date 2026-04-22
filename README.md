@@ -14,6 +14,7 @@ Each weight in the classifier layers is multiplied by a **learnable gate** ∈ (
 - **Forward pass** — Hard binary mask via STE: `gate ≥ 0.5 → 1, else → 0` (true structural zeros)
 - **Backward pass** — Gradients flow through smooth sigmoid (STE trick — maintains differentiability)
 - **L1 penalty** on gate values pushes scores toward −∞ → sigmoid → 0 → weight is pruned
+  
 Total Loss = CrossEntropy(label_smoothing=0.1) + λ × mean(sigmoid(gate_scores))
 
 ---
