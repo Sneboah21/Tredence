@@ -1,0 +1,17 @@
+[
+  {
+    "lambda": 0.001,
+    "test_accuracy_%": 89.53,
+    "sparsity_%": 71.03
+  },
+  {
+    "lambda": 0.01,
+    "test_accuracy_%": 89.51,
+    "sparsity_%": 77.64
+  },
+  {
+    "lambda": 0.05,
+    "test_accuracy_%": 89.34,
+    "sparsity_%": 85.47
+  }
+]
